@@ -1,0 +1,13 @@
+apex==0.1
+easydict==1.9
+matplotlib==3.1.0
+numpy==1.16.4
+opencv-python==4.4.0.46
+opencv_contrib_python==4.1.0.25
+Pillow==8.0.1
+pyparsing==2.4.7
+torch==1.7.1
+torchsummary==1.5.1
+torchvision==0.8.2
+tqdm==4.47.0
+randaugment==1.0.2
