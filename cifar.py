@@ -281,7 +281,7 @@ def main(cfg, device):
                     if_ood = type_target[:, 2]
                     if cfg.weighting == 'soft':
                         # soft seletcion / weighting
-                        loss_cls = loss_clean * clean_pred_prob + loss_idn + idn_pred_prob + loss_ood * ood_pred_prob
+                        loss_cls = loss_clean * clean_pred_prob + loss_idn * idn_pred_prob + loss_ood * ood_pred_prob
                         if cfg.neg_cons:
                             loss_cons = loss_cons * (clean_pred_prob + idn_pred_prob - ood_pred_prob)
                         else:
